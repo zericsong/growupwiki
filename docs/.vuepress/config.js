@@ -4,6 +4,17 @@ module.exports = {
   description: '这是我的第一个 VuePress 站点',
 
   themeConfig: {
-    logo: 'https://vuejs.org/images/logo.png',
+    logo: '/images/logo.jpg',
+
+    navbar: [
+      {
+        text: 'Foo',
+        link: '/',
+      },
+      {
+        text: 'Group',
+        children: ['/group/foo.md', '/group/bar.md'],
+      },
+    ],
   },
 }
