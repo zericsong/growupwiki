@@ -1,11 +1,12 @@
 module.exports = {
   lang: 'zh-CN',
-  title: '你好， VuePress ！',
-  description: '这是我的第一个 VuePress 站点',
+  title: '你好， Press ！',
+  description: '这是我的第一个 Press 站点',
+  head: [['link', { rel: 'icon', href: '/images/favicon.ico' }]],
 
   themeConfig: {
-    logo: '/images/logo.jpg',
-
+    logo: '/images/logo_1.png',
+    home: '/',
     navbar: [
       {
         text: 'Foo',
@@ -16,5 +17,7 @@ module.exports = {
         children: ['/group/foo.md', '/group/bar.md'],
       },
     ],
+    repo:'https://github.com/zericsong/growupwiki.git',
+    sidebar:'auto',
   },
 }
