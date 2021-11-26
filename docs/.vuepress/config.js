@@ -13,11 +13,34 @@ module.exports = {
         link: '/',
       },
       {
-        text: 'Group',
-        children: ['/group/foo.md', '/group/bar.md'],
+        text: 'poo',
+        link: '/g2.md',
       },
+      {
+        text: 'Group',
+        children: [
+          { text: 'Chinese', link: '/guide/g.md' },
+          { text: 'Japanese', link: '/guide2/2.md' }
+        ],
+      },
+      {
+        text: 'Group2',
+        children: [
+          { text: 'Chinese', link: '/guide/g.md' },
+          { 
+            text: 'Japanese', 
+            children:[
+              { text: 'Chinese', link: '/guide/g.md' },
+              { text: 'Chinese', link: '/guide/g.md' },
+              { text: 'Chinese', link: '/guide/g.md' }
+            ] 
+          }
+        ],
+      },
+      '/guide2/2.md'
     ],
     repo:'https://github.com/zericsong/growupwiki.git',
-    sidebar:'auto',
+    sidebar:'false',
   },
+  
 }

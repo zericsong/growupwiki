@@ -1,5 +1,12 @@
-node_modules
 .temp
 .cache
-dist
+dest
+*/.DS_Store
 
+/node_modules
+/.pnp
+.pnp.js
+.pnp.cjs
+.yarn/cache
+.yarn/releases
+.yarn/install-state.gz
